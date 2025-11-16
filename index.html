@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Bayu Store - Jual Beli Akun & Jasa Game</title>
+    <!-- Memuat Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Font Awesome untuk ikon --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Warna latar belakang gelap */
+            color: #c9d1d9; /* Warna teks utama */
+        }
+        .container-card {
+            background-color: #161b22; /* Warna latar belakang card */
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .header-bg {
+            background-color: #238636; /* Warna hijau khas untuk header */
+        }
+        .section-title {
+            color: #58a6ff; /* Warna biru untuk judul bagian */
+        }
+        .list-item {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            transition: all 0.2s ease-in-out;
+        }
+        .list-item:hover {
+            background-color: #161b22;
+            border-color: #238636;
+        }
+        .info-box {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+        }
+        .warning-box {
+            background-color: #491717; /* Merah gelap untuk peringatan */
+            border-color: #f85149; /* Merah terang */
+        }
+        .cta-button {
+            background-color: #238636;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2ea043;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(35, 134, 54, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Kontainer Utama / Card Menu --><div class="container-card w-full max-w-lg rounded-xl overflow-hidden shadow-lg">
+
+        <!-- Header dengan Nama Toko --><div class="header-bg p-6 text-center">
+            <h1 class="text-4xl font-extrabold text-white mb-2 flex items-center justify-center">
+                <i class="fas fa-store mr-3"></i> JB BAYU STORE
+            </h1>
+            <p class="text-md font-medium text-gray-100 italic">Solusi Kebutuhan Gaming Terbaik Anda</p>
+        </div>
+
+        <!-- Bagian Menu Produk --><div class="p-6">
+            <h2 class="text-2xl font-bold mb-4 section-title">LIST MENU UTAMA</h2>
+            <ul class="space-y-3">
+                <!-- Item Menu --><li class="list-item flex items-center p-4 rounded-lg">
+                    <i class="fas fa-gamepad text-2xl text-green-400 mr-4 w-7 text-center"></i>
+                    <span class="text-lg font-semibold">Jual Beli Akun Game</span>
+                </li>
+                <li class="list-item flex items-center p-4 rounded-lg">
+                    <i class="fas fa-user-shield text-2xl text-green-400 mr-4 w-7 text-center"></i>
+                    <span class="text-lg font-semibold">Jasa Admin Rekber MC</span>
+                </li>
+                <li class="list-item flex items-center p-4 rounded-lg">
+                    <i class="fas fa-coins text-2xl text-green-400 mr-4 w-7 text-center"></i>
+                    <span class="text-lg font-semibold">Top Up Game</span>
+                </li>
+                <li class="list-item flex items-center p-4 rounded-lg">
+                    <i class="fas fa-bullhorn text-2xl text-green-400 mr-4 w-7 text-center"></i>
+                    <span class="text-lg font-semibold">Open Jasa Posting</span>
+                </li>
+                <li class="list-item flex items-center p-4 rounded-lg">
+                    <i class="fas fa-server text-2xl text-green-400 mr-4 w-7 text-center"></i>
+                    <span class="text-lg font-semibold">Suntik Server Luar (FF)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bagian Informasi Tambahan --><div class="p-6 border-t border-[#30363d] space-y-4">
+            <h2 class="text-2xl font-bold mb-4 section-title">Informasi Penting</h2>
+
+            <!-- Jam Buka --><div class="info-box p-4 rounded-lg">
+                <p class="font-bold text-lg text-yellow-400 mb-2 flex items-center">
+                    <i class="fas fa-clock mr-3 text-xl"></i> Jam Operasional
+                </p>
+                <p class="text-base leading-relaxed">⏰ Buka Mulai <strong class="text-white">07:30 - 23:00</strong></p>
+                <p class="text-base leading-relaxed">🗓️ Buka Tiap Hari Kecuali (<strong class="text-red-400">Jumat Tutup</strong>)</p>
+            </div>
+
+            <!-- Catatan Penting --><div class="warning-box p-4 rounded-lg border-red-700">
+                <p class="font-bold text-lg text-red-400 mb-2 flex items-center">
+                    <i class="fas fa-exclamation-triangle mr-3 text-xl"></i> Perhatian!
+                </p>
+                <p class="text-base leading-relaxed">⚠️ Hati Hati Clone Scamer Yang Asli Hanya Ini</p>
+                <p class="text-base leading-relaxed mt-2">✒️ HANYA MELAYANI PEMBAYARAN BARU PROSES</p>
+            </div>
+
+            <!-- Pembayaran --><div class="info-box p-4 rounded-lg">
+                <p class="font-bold text-lg text-blue-400 mb-2 flex items-center">
+                    <i class="fas fa-money-bill-wave mr-3 text-xl"></i> Metode Pembayaran
+                </p>
+                <p class="text-base leading-relaxed">💸 PEMBAYARAN VIA : <strong class="text-white">DANA</strong></p>
+            </div>
+        </div>
+
+        <!-- Bagian Kontak WA (CTA) --><div class="p-6 pt-2">
+            <a href="https://wa.me/6281276044692" target="_blank" class="cta-button w-full flex items-center justify-center text-white py-4 rounded-xl text-xl font-bold hover:scale-105 uppercase transition-transform duration-300 ease-in-out">
+                <i class="fab fa-whatsapp text-3xl mr-3"></i>
+                Hubungi Bayu Store Sekarang
+            </a>
+            <p class="text-center text-sm mt-4 text-gray-500">Nomor WA: +62 812-7604-4692</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
